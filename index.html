@@ -1,0 +1,1349 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Lyrics de L'ADO</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px;
+            padding: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .item:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .accordion {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .accordion:hover {
+            background-color: #0056b3;
+        }
+        .lyrics {
+            display: none;
+            max-height: 100px;
+            overflow: hidden;
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .show-more {
+            cursor: pointer;
+            color: #007bff;
+            text-align: center;
+            margin-top: 5px;
+            display: none;
+        }
+        .icon-container {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .icon {
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s;
+            margin: 0 10px;
+        }
+        .icon:hover {
+            color: #007bff;
+        }
+        .song-title {
+            font-weight: bold;
+            color: black; /* Couleur du titre */
+            font-size: 1.5em; /* Taille du titre */
+        }
+    </style>
+    <script>
+        function toggleLyrics(event) {
+            const lyrics = event.nextElementSibling;
+            const showMore = event.nextElementSibling.nextElementSibling;
+            if (lyrics.style.display === 'block') {
+                lyrics.style.display = 'none';
+                showMore.style.display = 'none';
+            } else {
+                lyrics.style.display = 'block';
+                showMore.style.display = 'block';
+            }
+        }
+
+        function showFullLyrics(event) {
+            const lyrics = event.previousElementSibling;
+            lyrics.style.maxHeight = 'none';
+            event.style.display = 'none';
+        }
+		
+        function toggleLyrics(event) {
+            const lyrics = event.nextElementSibling;
+            const showMore = event.nextElementSibling.nextElementSibling;
+            if (lyrics.style.display === 'block') {
+                lyrics.style.display = 'none';
+                showMore.style.display = 'none';
+                event.textContent = "Show Lyrics"; // Change le texte en "Show Lyrics"
+            } else {
+                lyrics.style.display = 'block';
+                showMore.style.display = 'block';
+                event.textContent = "Hide Lyrics"; // Change le texte en "Hide Lyrics"
+            }
+        }
+
+        function showFullLyrics(event) {
+            const lyrics = event.previousElementSibling;
+            lyrics.style.maxHeight = 'none';
+            event.style.display = 'none';
+        }
+    
+
+    </script>
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+            <h1 class="song-title">Mon Portfolio Musical</h1>
+
+    <!-- Items -->
+    <div class="items row">
+
+        <article class="item col-md-6">
+            <h2 class="song-title">🎶 Au Cas Où 🎶</h2>
+            <div class="icon-container">
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+            <div class="lyrics">J'suis remontée à bloc 💪<br>
+                La kalash redescend 🔫<br>
+                Même quand j'suis en détente ☁️<br>
+                On fête pas Noël qu'en Décembre 🎄<br>
+                J'soulève les roches ⛰️<br>
+                Après 2min30 mon souffle je le reprends ⏳<br>
+                On nick le refrain donc les couplets sont baclés 🎤<br>
+                J'redonne un souffle comme Barkley ⚽<br>
+                Tu sais qu'on a pas toutes notre vie fait du papier 💵<br>
+                On fut dans la calle 🌆<br>
+                Hey hey!<br>
+                Numéro 10 dans la surface ⚽<br>
+                Toi même tu sais qu'il y a danger ⚠️<br>
+                Et s'ils font comme les vilains, tir non cadrés 🎯<br>
+                Ils peuvent pas m'enlever j'suis encrée 💼<br>
+                J'prie tous les jours au réveil pour la madre 🙏<br>
+                Si je sors c'est pour encaissé 💰<br>
+                Si je reviens pas suis pas passées ❌<br>
+                Au cas où on aura tous coffré 🔒<br>
+                Au cas où...<br>
+                Dans un putai de trou 🚧<br>
+                C'est peut être la fois de trop ⏳<br>
+                J'sors pour encaissés 💰<br>
+                Si j'reviens pas j'suis pas passés ❌<br>
+                N°7 a percé 🎉<br>
+                N°10 l'a raté ❌<br>
+                J'ai menti, j'ai volé, j'ai hué 😔<br>
+                J'suis à l'état de grâce ✨<br>
+                Lors du partage j'veux ma part 📦<br>
+                De la maison, la madre prie pour moi 🙏<br>
+                Si j'reviens pas suis pas passés ❌<br>
+                Au cas où on aura tous coffre 🔒<br>
+                Si j'reviens pas suis pas passés ❌<br>
+                On aura tous coffre au cas où 🔐<br>
+                Deplacement illicite 🚗<br>
+                On blanchi que du liquide 💧<br>
+                Tu sais que dans la téci 🏙️<br>
+                On peut t'enlever la vie 💀<br>
+                Pour un copec 🪙<br>
+                Au cas où j'aurai réglé les paramétrages ⚙️<br>
+                Les amis agissent comme les paramécies 🦠<br>
+                On dribble comme Léo Messi ⚽<br>
+                Si tu t'agites tu vas perdre ta vie 🚨<br>
+                Comme dans la mafia russe 🇷🇺<br>
+                Comme Popeye j'ai réglé la rançon 💰<br>
+                Ils ont fait du random 🎲<br>
+                Cotticeli dans le décor 🌆<br>
+                Au cas où...<br>
+                Au cas où...<br>
+            </div>
+            <div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+        </article>
+
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🔥 Sur le Rainté 🔥</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				J'suis comme Koné sur le rainté 💥 <br>
+				Ils me connaissent donc j'suis entraîné 🤝 <br>
+				Ils vont faire des cauchemars la noche 🌙 <br>
+				J'vais les traumatisés, la flamme est activée 🔥 <br>
+				Avec mon train de vie j'vais les shomerv 🚂 <br>
+				J'les connais donc j'suis entraîné 👊 <br>
+				Le soir sur l'outils j'vais me déchaîner 🎉 <br>
+				Mes grands-pères étaient enchaînés ⛓️ <br>
+				<br>
+				J'suis venu faire connaissance 🤔 <br>
+				Avec un bro qui n'aime pas ma cam 🕵️ <br>
+				Imagine la fin de l'histoire 📖 <br>
+				J'ferai désormais partie des connaissances d'un parisiens 🌍 <br>
+				À moins que en enfer j'finirai ma vie 💀 <br>
+				Une connaissance dans l'eau delà 🌊 <br>
+				Vaut mieux que 10 qui veulent que tu tombes dans l'eau du lac 🥺 <br>
+				<br>
+				J'suis comme Koné sur le rainté 💥 <br>
+				Ils me connaissent donc j'suis entraîné 🤝 <br>
+				Ils vont faire des cauchemars la noche 🌙 <br>
+				J'vais les traumatisés, la flamme est activée 🔥 <br>
+				Avec mon train de vie j'vais les shomerv 🚂 <br>
+				J'les connais donc j'suis entraîné 👊 <br>
+				Le soir sur l'outils j'vais me déchaîner 🎉 <br>
+				Mes grands-pères étaient enchaînés ⛓️ <br>
+				<br>
+				Ouais Ouais ✌️ <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">✨ L'Esprit d'Un Icône ✨</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Ils veulent me forcer à mettre clé sous la porte 🔑 <br>
+				Mais si je m'emporte ce sera pas bon pour eux ⚠️ <br>
+				Chargé à bloc, le gloc est prêt à dégainer 🔫 <br>
+				J'ai trop cogité la nocce 🤔 <br>
+				J'veux des dolce pour mon jour de noces 🍰 <br>
+				J'veux buzzer plus que silicone 📈 <br>
+				J'veux être une icône 🌟 <br>
+				J'veux des posters de moi comme <br>
+				Comme Acon et tous ces renoirs 🎨 <br>
+				Tu connais la musique et tous ses refrains 🎶 <br>
+				Tu sais ce qu'ils disent et j'peux pas faire frein ⏸️ <br>
+				J'dois rattraper tous ces gars au loin 🚀 <br>
+				Si je le fais pas j'vais manger du foin 🌾 <br>
+				<br>
+				La passe à dix sur Tsimikas ⚽ <br>
+				J'gagne les sets comme Tsitsipas 🏆 <br>
+				Mais si j'passe pas ⛔ <br>
+				Papa sera fier de moi 👨‍👦 <br>
+				Pour toute ma famille, j'suis un espoir 🌈 <br>
+				Faut que je fasse des exploits avant de rentrer 🏃‍♂️ <br>
+				Si non personne va grailler 🍽️ <br>
+				<br>
+				Ils veulent me forcer à mettre clé sous la porte 🔑 <br>
+				Mais si je m'emporte ce sera pas bon pour eux ⚠️ <br>
+				Chargé à bloc, le gloc est prêt à dégainer 🔫 <br>
+				J'ai trop cogité la nocce 🤔 <br>
+				J'veux des dolce pour mon jour de noces 🍰 <br>
+				J'veux buzzer plus que silicone 📈 <br>
+				J'veux être une icône 🌟 <br>
+				J'veux des posters de moi comme <br>
+				Comme Acon et tous ces renoirs 🎨 <br>
+				Tu connais la musique et tous ses refrains 🎶 <br>
+				Tu sais ce qu'ils disent et j'peux pas faire frein ⏸️ <br>
+				J'dois rattraper tous ces gars au loin 🚀 <br>
+				Si je le fais pas j'vais manger du foin 🌾 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🔥 Jamais Seul 🔥</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Et la kichta nous fait souffler 💨 <br>
+				Tu sais qu'on pourra les faire souffrir 😈 <br>
+				J'finirai jamais seul 🚶‍♂️ <br>
+				J'finirai jamais seul 🚶‍♂️ <br>
+				C'est à la frappe du cello qu'on reconnaît ses frères 🎶 <br>
+				Qu'on reconnaît les vrais 🔍 <br>
+				Chaque année je monte le level ⬆️ <br>
+				Mais au sommet j'suis pas seul 🏔️ <br>
+				Dans la rue c'est la guerre mais on reste ⚔️ <br>
+				Vrai reconnaît vrai 🙌 <br>
+				On le reconnaît à la dégaine 😎 <br>
+				Si je te reconnaît pas, je dégaine 🔫 <br>
+				Même bae appuie sur la gâchette 💥 <br>
+				Tu nous dois, tu peux pas te cacher 👀 <br>
+				On porte les gants et la cagoule 🥷 <br>
+				Tu reposes en paix si je finis le lobout ☠️ <br>
+				Et j'finirai jamais seul 🚶‍♂️ <br>
+				<br>
+				La kalash nous apprend plus que ce que l'on sait 📖 <br>
+				On peut tous faire pour le locce 💸 <br>
+				Mais on respecte les ancêtres 🙏 <br>
+				Cellophane 10 🎁 <br>
+				Tireur de péno comme Percy ⚽ <br>
+				Affairé avec des meufs de Bercy 👩‍🎤 <br>
+				Comme R9, on est précis 🎯 <br>
+				J'porte les gants et la cagoule 🥷 <br>
+				Tu feras moins le malin si j'sors le shotgun 🔫 <br>
+				<br>
+				Les billets m'font souffler 💨 <br>
+				Où t'étais quand j'souffrais ? 😔 <br>
+				J'finirai jamais seul 🚶‍♂️ <br>
+				<br>
+				Et la kichta nous fait souffler 💨 <br>
+				Tu sais qu'on pourra les faire souffrir 😈 <br>
+				J'finirai jamais seul 🚶‍♂️ <br>
+				J'finirai jamais seul 🚶‍♂️ <br>
+				C'est à la frappe du cello qu'on reconnaît ses frères 🎶 <br>
+				Qu'on reconnaît les vrais 🔍 <br>
+				Chaque année je monte le level ⬆️ <br>
+				Mais au sommet j'suis pas seul 🏔️ <br>
+				Dans la rue c'est la guerre mais on reste ⚔️ <br>
+				Vrai reconnaît vrai 🙌 <br>
+				On le reconnaît à la dégaine 😎 <br>
+				Si je te reconnaît pas, je dégaine 🔫 <br>
+				Même bae appuie sur la gâchette 💥 <br>
+				Tu nous dois, tu peux pas te cacher 👀 <br>
+				On porte les gants et la cagoule 🥷 <br>
+				Tu reposes en paix si je finis le lobout ☠️ <br>
+				Et j'finirai jamais seul 🚶‍♂️ <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌪️ Magicien d'Oz 🌪️</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Quand j'regarde ce que j'fais 👀 <br>
+				Et je regarde ce que je faisais ⏳ <br>
+				Je me demande qui je suis ou peut-être qui j'étais 🤔 <br>
+				Ils veulent me forcer à mettre clés sous la porte 🚪 <br>
+				Mais j'vais pas les laisser faire 💪 <br>
+				Mais j'ai fourni trop d'effort 😓 <br>
+				J'dois faire entrer cash et espèces 💵 <br>
+				Même s'il faut soulever le marteau de Thor ⚡ <br>
+				Si tu me respectes pas, tu vas voir ce que j'vais te faire 😡 <br>
+				Tu vas passer par la grande porte 🚪 <br>
+				Il y a tous les vices sur terre 🌍 <br>
+				Comme le trafic de drogue 🚬 <br>
+				Même si j'ai pas raison, j'veux démancler tous les réseaux 🕸️ <br>
+				Faut pas que je compte sur les autres ❌ <br>
+				Que de briseurs d'os, ceux-là 👊 <br>
+				J'suis comme le magicien d'Oz 🎩 <br>
+				J'dois canaliser les miens 🔥 <br>
+				Pour galvaniser mes frères 👬 <br>
+				Si j'étais pas aussi déterminé, j'serai si pieds sous terre ⛏️ <br>
+				J'compte pas sur la prière 🙏 <br>
+				J'suis trop loin du royaume des cieux ☁️ <br>
+				Y a trop de problèmes pour que je reste ❗ <br>
+				Mais j'suis encore trop jeune 👶 <br>
+				J'suis loin d'être vieux 👴 <br>
+				J'crains beaucoup trop les dieux 😱 <br>
+				<br>
+				Hein 🤷‍♂️ <br>
+				Le succès c'est pour aujourd'hui 📅 <br>
+				Obligé de tout mettre dans le dossier 🔍 <br>
+				Si elle veut pas, tu peux pas la forcer 🚫 <br>
+				Sinon elle va t'attribuer un commis d'office ⚖️ <br>
+				Cellophaner 10 jusqu'à minuit 🌙 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">⚫️ Gamos Noir et Blanc ⚪️</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Un gamos noir et blanc ⚫️⚪️ <br>
+				Rien n'est rose, tout est noir 🌑 <br>
+				Tu les connais, connais 👀 <br>
+				J'ai tout fait pour le cello 🎶 <br>
+				Fini de coffer, faut que je prenne le large 🚤 <br>
+				J'suis sans dessus dessous 🤷‍♂️ <br>
+				J'ai la dalle des sous 💸 <br>
+				Maman m'avait prévenu 👩‍👦 <br>
+				Mais j'ai fait le sourd 🙉 <br>
+				<br>
+				La monnaie nous met au-dessus des autres 💰 <br>
+				C'est elle-même qui nous rabaisse ⬇️ <br>
+				J'ai vendu tout le shit qu'ils m'ont confié 🔥 <br>
+				Ils en redemandent, mais que peut un jeune lossa ❓ <br>
+				J'aurai tout vendu avant qu'ils ne reviennent le soir 🌙 <br>
+				On verra demain 🌅 <br>
+				<br>
+				Comme Kerchak, j'me suis levé tôt ⏰ <br>
+				J'étais pris donc j'ai mis le veto 🚫 <br>
+				J'suis chez les autres comme Beto 👥 <br>
+				Faut chercher papier et métaux 📝 <br>
+				Si j'veux être au sommet un jour d'El Khalifa ⛰️ <br>
+				Faut mettre le maximal 🚀 <br>
+				J'prête pas allégeance ❌ <br>
+				J'sors pas sans les gants 🧤 <br>
+				Aux autres, j'fais confiance 🤝 <br>
+				J'suis seul dans la planque 🏚️ <br>
+				Donc viens, on fait nos plans 📜 <br>
+				<br>
+				Comme Kerchak, j'me suis levé tôt ⏰ <br>
+				J'étais pris donc j'ai mis le veto 🚫 <br>
+				J'suis chez les autres comme Beto 👥 <br>
+				Faut chercher papier et métaux 📝 <br>
+				Si j'veux être au sommet un jour d'El Khalifa ⛰️ <br>
+				Faut mettre le maximal 🚀 <br>
+				J'prête pas allégeance ❌ <br>
+				J'sors pas sans les gants 🧤 <br>
+				Aux autres, j'fais confiance 🤝 <br>
+				J'suis seul dans la planque 🏚️ <br>
+				Donc viens, on fait nos plans 📜 <br>
+				Solo 🤫 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">💵 La Monnaie Aiguisée 💵</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				La monnaie, la monnaie aiguisée 💰 <br>
+				Les yeux dans le viseur 👀 <br>
+				J'peux pas rentrer après dix heures ⏰ <br>
+				J'veux voir face de moi sur diseur 🎤 <br>
+				J'sais pas ce qui se passe dans dix ans ⏳ <br>
+				Mais je sais ce qu'il y avait y a dix ans ⏳ <br>
+				Y a tous mes gars sur select et j'peux pas les sélectionner 🚷 <br>
+				Toute la rue, j'ai scionné 🌆 <br>
+				Prêt à tout pour liasses de billets 💵 <br>
+				J'peux pas t'oublier ❌ <br>
+				Parce que le dos, tu m'as tourné 🔄 <br>
+				Quand j'étais en difficultés 😔 <br>
+				<br>
+				La monnaie, la monnaie aiguisée 💰 <br>
+				Tu sais qu'j'suis avisé 🔍 <br>
+				Au bon port, j'suis arrivé ⚓ <br>
+				Au regard, tu sais qui est visée 👁️ <br>
+				De moi, je peux pas douter 🤔 <br>
+				Tu peux pas renoncer quand t'y as goûté 🍽️ <br>
+				De la chica, tu peux pas bouger 🚫 <br>
+				Liasses de billets me font rougir 🌹 <br>
+				Liasses de billets me font souffler 💨 <br>
+				<br>
+				Liasses de billets me font rougir 🌹 <br>
+				Liasses de billets me font souffler 💨 <br>
+				La hagra ça paye, nous on le confirme 💸 <br>
+				J'peux pas faire faillite ❌ <br>
+				Fait entrer de bénéfice 📈 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				La monnaie nous fait réfléchir 🤔 <br>
+				Stop, on éradiquait tous les vices 🚫 <br>
+				À la seconde, on fructifie 📈 <br>
+				Plus de voyage en classe éco ✈️ <br>
+				On bat ton ego à coup de couteau 🔪 <br>
+				Tu te fais briser comme Yan Couto 🥋 <br>
+				Espèce de second couteau 🔪 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				Pas de perte, que du bénéfice 💵 <br>
+				<br>
+				La monnaie, la monnaie aiguisée 💰 <br>
+				Tu sais qu'j'suis avisé 🔍 <br>
+				Au bon port, j'suis arrivé ⚓ <br>
+				Au regard, tu sais qui est visée 👁️ <br>
+				De moi, je peux pas douter 🤔 <br>
+				Tu peux pas renoncer quand t'y as goûté 🍽️ <br>
+				De la chica, tu peux pas bouger 🚫 <br>
+				Liasses de billets me font rougir 🌹 <br>
+				Liasses de billets me font souffler 💨 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🚶‍♂️ Désolé, C'est Comme Ça Que Je Suis 🚶‍♂️</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Désolé si vous m'aimez pas, c'est comme ça que je suis 😔 <br>
+				C'est l'histoire d'un igo que la vie n'a pas écarté 🚶‍♂️ <br>
+				C'est pourquoi je m'éprise 💔 <br>
+				Affaire de papel, impliqué par symétrique 💼 <br>
+				Si tu veux vendre dans le quartier, faudra que tu méprises 🚫 <br>
+				<br>
+				Le mental à Toni, Toni, Toni Montana 🎭 <br>
+				J'les ai yombés dans le tierqua 💥 <br>
+				J'esquive les barrages ⛔ <br>
+				Braquages en cours, j'attends la flicailles 🚔 <br>
+				Faut une Tesla pour me barrer d'ici ⚡ <br>
+				J'suis prêt pour rejoindre la citadine 🌆 <br>
+				Ils prennent le chemin court et rapide ⏩ <br>
+				Sur le plus sûr, j'peux être speed ⚡ <br>
+				En Italie, on se verra à la capitale 🇮🇹 <br>
+				Dans le bateau, j'suis le seul capitaine 🚢 <br>
+				<br>
+				Désolé si vous m'aimez pas, c'est comme ça que je suis 😔 <br>
+				C'est l'histoire d'un igo que la vie n'a pas écarté 🚶‍♂️ <br>
+				C'est pourquoi je m'éprise 💔 <br>
+				Affaire de papel, impliqué par symétrique 💼 <br>
+				Si tu veux vendre dans le quartier, faudra que tu méprises 🚫 <br>
+				<br>
+				C'est compliqué mais j'peux pas vriller 😟 <br>
+				C'est l'heure de briller mais les démons du passé me rappellent ⏳ <br>
+				Faut qu'j'quitte d'ici 🚪 <br>
+				Avant qu'ils ne rappliquent 🚨 <br>
+				Faudra que je m'applique 📖 <br>
+				La solution magique au bout du doigt ✨ <br>
+				Viens la chercher 👈 <br>
+				<br>
+				Hum hum... 🎶 <br>
+				Désolé si vous m'aimez pas, c'est comme ça que je suis 😔 <br>
+				Hey, tu connais la suite 🎤 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">💔 Un Verre de Hennessy 💔</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Si je te dis que j'ai rien fait, c'est que j'ai menti 🤥 <br>
+				J'dors près du canon 🔫 <br>
+				Des crimes j'commets même le lundi 🗓️ <br>
+				Pourtant j'suis tranquille la nuit 🌙 <br>
+				Des potos partis trop vite 💨 <br>
+				Parti loin d'ici 🚪 <br>
+				J'suis venu seul, donc j'ai peu 😔 <br>
+				Pas de meute, j'suis soli 🐺 <br>
+				Depuis que t'es parti 🥺 <br>
+				<br>
+				Des secrets à protéger mais j'ai fait le laussa 🤫 <br>
+				Quand j'regarde dans la viseur, c'est déjà trop tard ⏳ <br>
+				Des airs de BG, la mentalité de Thanos 💪 <br>
+				J'serai là avant dix heures, j'serai pas en retard ⏰ <br>
+				J'ai grave merdé, futur tollard 🚔 <br>
+				J'veux la récupérer, mais d'autres ont puçav 💔 <br>
+				J'ai fait le connard, mais c'est pas grave 🤷‍♂️ <br>
+				<br>
+				Quand le rêve est trop long, le réveil est brutal 🌅 <br>
+				J'ai fait les choses à fond pour éveiller le mental 🧠 <br>
+				La petite veut toujours plus, donc c'est une sacrée pétasse 😏 <br>
+				J'peux la mettre au fond avec le sharigan 👁️ <br>
+				J'veux des buts comme Ginola ⚽ <br>
+				Avoir le mental à Maradona 🇦🇷 <br>
+				Mais tout n'est pas donné, faut chercher la monnaie 💰 <br>
+				Faut chercher la monnaie 💸 <br>
+				Faut que je quitte d'ici, y'a trop de faux amis 🚫 <br>
+				<br>
+				Un verre de Hennessy pour soulager ma peine 🥃 <br>
+				C'est parce que j'ai trop de soucis que j't'appelle 📞 <br>
+				J'fronces les soucis quand il s'agit de faire la fête 🎉 <br>
+				Un beau sourire, la cam dans le verre 😁 <br>
+				Et si chaque minute j'pourrais monter le level 📈 <br>
+				Du game, j'serai le maître 🎮 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🚦 Street Life 🚦</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Ouais ouais ouais ouais 🎶 <br>
+				J'ai bien envie de m'arrêter mais j'peux pas 🚀 <br>
+				200 à l'heure comme Popeye, j'esquive les barrages 🏎️ <br>
+				Braquage en cours, crois-tu que j'attends la flicaille 🚔 <br>
+				La street, faudrait que j'm'arrache 🏙️ <br>
+				Le talent et la capacité 🎤 <br>
+				Qui pourra m'empêcher de citer 🔒 <br>
+				Fauter, piller sans jamais s'arrêter 🚫 <br>
+				Oser, rapper sans jamais s'arrêter 🎤 <br>
+				Principe d'un rappeur engagé 🔥 <br>
+				<br>
+				Hey hey hey 👋 <br>
+				<br>
+				Ma bête est en cage 🐾 <br>
+				On gère nos streets comme des Kage ⚔️ <br>
+				Viens pas t'en mêler 🚷 <br>
+				Si tu nous cherches, on va t'apprendre à griller des arachides 🥜 <br>
+				Tranchant, comme la bande à Itachi ⚔️ <br>
+				On est white même en étant tachés 🎨 <br>
+				Tachés par le sang de ceux qui étaient attachés 🩸 <br>
+				Tachés, liés par les liens de la street 🔗 <br>
+				<br>
+				La life de brigand, j'veux arrêter 🛑 <br>
+				C'est ce que tu fais qui définit ton train de vie 💼 <br>
+				T'as beau voler, t'es un putain de voleur 👎 <br>
+				T'as puçav tous mes frérots, t'es un bavard 📢 <br>
+				Une dans la tête et tu parleras plus jamais 💥 <br>
+				Jamais, jamais ❌ <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🎤 Conversations sur le Bonheur 🎤</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Psy : Bienvenue à votre 2ème séance. <br>
+				Eliakim : Bonjour. <br>
+				<br>
+				Psy : Quel est votre thème aujourd'hui ? <br>
+				Eliakim : Bonheur. <br>
+				<br>
+				Psy : Commençons. <br>
+				<br>
+				Eliakim : <br>
+				<br>
+				Ça dort dans beau draps 🛏️ <br>
+				Mais ça se lève jamais de bon matin 🌅 <br>
+				Je rentrerai ce soir 🌙 <br>
+				Mais demain je sais pas ce qui m'attend 🤔 <br>
+				Peut-être un cicar derrière la porte 🚪 <br>
+				Au garage peut-être un porc 🐖 <br>
+				J'suis un négro mais ça se dit pas 🚫 <br>
+				Écoute le message qui passe 📢 <br>
+				<br>
+				Un putain de négro 💔 <br>
+				J'sais que ça se dit pas 🚫 <br>
+				Écoute bien le message qui passe 📢 <br>
+				Dans la téci ça dit des trucs à deux balles 💸 <br>
+				Le tribunal c'est juste à deux pas ⚖️ <br>
+				La dernière fois que j'y suis allé c'était l'autre soir 🕒 <br>
+				Mais ça se dit pas 🚫 <br>
+				Y a un message qui passe 📢 <br>
+				Écoute le bien 🔊 <br>
+				Ils disent que le pognon rend pas content 💰 <br>
+				J'étais content la dernière fois que j'ai encaissé 🤑 <br>
+				Mais pas si content que ça 😕 <br>
+				Le passé repasse demain 🔄 <br>
+				Demain on verra 👀 <br>
+				<br>
+				Ça dort dans beau draps 🛏️ <br>
+				Mais ça se lève jamais de bon matin 🌅 <br>
+				Je rentrerai ce soir 🌙 <br>
+				Mais demain je sais pas ce qui m'attend 🤔 <br>
+				Peut-être un cicar derrière la porte 🚪 <br>
+				Au garage peut-être un porc 🐖 <br>
+				J'suis un négro mais ça se dit pas 🚫 <br>
+				Écoute le message qui passe 📢 <br>
+				<br>
+				Psy : Nous avons abordé des points importants aujourd'hui. Pour notre prochaine séance, je voudrais explorer plus en détail comment la musique t'aide à gérer cette pression. Est-ce que la semaine prochaine à la même heure te convient ? <br>
+				Eliakim : Oui, ça me va. Merci, docteur. <br>
+				<br>
+				Psy : Parfait, Eliakim. Prenons rendez-vous pour la semaine prochaine. En attendant, essaie de te concentrer sur ce qui te fait du bien. À bientôt. <br>
+				Eliakim : Merci. À bientôt. <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌙 Nuit Troublée 🌙</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Psy : Bonjour, Eliakim. Comment vous sentez-vous aujourd'hui ? <br>
+				Eliakim : Bonjour. Pas très bien, pour être honnête. Mon sommeil est vraiment perturbé. <br>
+				<br>
+				Psychologue : Je vois. Le sommeil est crucial pour notre bien-être. Depuis combien de temps avez-vous des problèmes de sommeil ? <br>
+				Eliakim : Ça fait un bon moment maintenant. Je me tourne et retourne toute la nuit. <br>
+				<br>
+				Psychologue : Compris. Le stress et l'anxiété peuvent souvent perturber le sommeil. Pouvez-vous me décrire une nuit typique pour vous ? <br>
+				Eliakim : Ok <br>
+				<br>
+				Chaque nuit c'est la même, le noir me fait peur, 🌌 <br>
+				Je tourne, je vire, je suis en guerre, comme un boxeur, 🥊 <br>
+				Les démons dans ma tête dansent autour de mon lit, 👻 <br>
+				Le silence est un cri, je veux juste trouver le répit. 😔 <br>
+				Les heures passent, l'horloge me nargue, ⏰ <br>
+				Mes rêves sont des cauchemars, des visions bizarres, 😱 <br>
+				Les ombres murmurent, elles veulent que je sombre, 🌑 <br>
+				Je lutte, je m'accroche, mais le sommeil m'abandonne. 😩 <br>
+				Des sueurs froides, je me lève en sursaut, ❄️ <br>
+				Chaque bruit, chaque craquement, un écho trop haut, 🔊 <br>
+				Je crie à la lune, mais elle reste muette, 🌙 <br>
+				Je cherche la paix, mais la nuit est une bête. 🐉 <br>
+				Les yeux ouverts, je fixe le plafond, 👁️ <br>
+				Je cherche la lumière dans ce puits sans fond, 💡 <br>
+				Le matin arrive, et je suis déjà brisé, 🌅 <br>
+				Un autre jour de fatigue, je suis épuisé. 😴 <br>
+				<br>
+				Sous la lune d'argent, je me perds dans la nuit, 🌙 <br>
+				Les étoiles murmurent des rêves endormis, ⭐ <br>
+				La lune veille sur moi, son éclat m’envahit, 🌕 <br>
+				Dans ce calme nocturne, je cherche un abri. 🛌 <br>
+				La lune me fait peur 😨 <br>
+				Elle est trop ronde pour moi 🌕 <br>
+				Les étoiles me fixent mais la nuit veut pas de moi ✨ <br>
+				Comment faire ? 🤷‍♂️ <br>
+				<br>
+				Psy : Nous avons abordé des points importants aujourd'hui. Pour notre prochaine séance, je voudrais explorer plus en détail comment la musique t'aide à gérer cette pression. Est-ce que la semaine prochaine à la même heure te convient ? <br>
+				Eliakim : Oui, ça me va. Merci, docteur. <br>
+				<br>
+				Psy : Parfait, Eliakim. Prenons rendez-vous pour la semaine prochaine. En attendant, essaie de te concentrer sur ce qui te fait du bien. À bientôt. <br>
+				Eliakim : Merci. À bientôt. <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🎤 Parle de Moi 🎤</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Psy: Bonjour, Eliakim. Aujourd’hui, nous allons aborder le thème "Moi". Quels aspects personnels souhaitez-vous mettre en avant dans votre musique ? <br>
+				Eliakim: Bonjour. Je veux que ma musique montre qui je suis vraiment, ce que j'ai vécu, et comment ça m’a influencé. <br>
+				<br>
+				Psy : Très bien. Comment votre musique reflète-t-elle vos expériences personnelles ? <br>
+				Eliakim : Chaque chanson parle de moments importants dans ma vie, des défis que j’ai rencontrés, et des leçons que j’ai apprises. <br>
+				<br>
+				Psy : Parfait. Nous allons examiner comment ces éléments personnels se retrouvent dans votre musique. Pouvez-vous partager le texte de votre morceau "Moi" ? <br>
+				<br>
+				Je viens de loin, et ça se voit dans ma musique, 🎶 <br>
+				Je parle de ma vie, de ce que j’ai traversé, 🌍 <br>
+				Chaque morceau est un reflet de ma réalité, 🪞 <br>
+				Des moments difficiles et des réussites que j’ai vécues. 🌟 <br>
+				J’ai grandi avec des défis, et je les partage dans mes chansons, 💪 <br>
+				Chaque texte montre un aspect de ce que je suis, <br>
+				Mon passé influence ce que je fais aujourd’hui, 🔄 <br>
+				À travers ma musique, je montre ma vraie face. 🎭 <br>
+				<br>
+				Parle de moi à travers ces morceaux, <br>
+				Montre ce que j’ai vécu et comment ça m’a façonné, 🛠️ <br>
+				Chaque mot dans mes chansons vient de ma vie, <br>
+				Parle de moi, et comprends mieux qui je suis. <br>
+				<br>
+				Les défis et les réussites sont dans chaque chanson, <br>
+				Je parle de ce que j’ai vécu, de ce qui me motive, <br>
+				Chaque morceau est une partie de mon histoire, 📖 <br>
+				Parle de moi, et vois ma vie à travers mes paroles. <br>
+				Je mets ma vérité dans chaque texte, <br>
+				Je montre mes luttes et mes triomphes, 🏆 <br>
+				À travers ma musique, je fais connaître ma réalité, <br>
+				Parle de moi, et découvre ce que je suis vraiment. <br>
+				<br>
+				Parle de moi à travers ces morceaux, <br>
+				Montre ce que j’ai vécu et comment ça m’a façonné, <br>
+				Chaque mot dans mes chansons vient de ma vie, <br>
+				Parle de moi, et comprends mieux qui je suis. <br>
+				Parle de moi à travers ces morceaux, <br>
+				Montre ce que j’ai vécu et comment ça m’a façonné, <br>
+				Chaque mot dans mes chansons vient de ma vie, <br>
+				Parle de moi, et comprends mieux qui je suis. <br>
+				<br>
+				Psy : Merci, Eliakim, pour avoir partagé ce texte. Il est clair que vous utilisez votre musique pour exprimer des aspects très personnels de votre vie. <br>
+				Eliakim : Merci. C’est vraiment important pour moi de transmettre ce que je ressens et ce que j’ai vécu. <br>
+				<br>
+				Psy : Nous allons approfondir ces aspects dans notre prochaine séance. Nous examinerons comment vous pouvez continuer à utiliser cette approche pour vous comprendre davantage et enrichir votre créativité. <br>
+				Eliakim : D’accord, j’ai hâte de continuer. À bientôt. <br>
+				<br>
+				Psy : À bientôt, Eliakim. Prenez soin de vous jusqu'à notre prochaine rencontre. <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🎶 En Avoir Marre 🎶</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Psy : Bonjour, Eliakim. Aujourd’hui, nous allons discuter du thème "En avoir Marre". Qu’est-ce qui vous pousse à explorer ce sentiment à travers votre musique ? <br>
+				Eliakim : Bonjour. Je veux parler de ce sentiment d’épuisement 😩 et de frustration 😠 que je ressens parfois. C’est comme si tout devenait trop lourd à porter. <br>
+				<br>
+				Psy : Je comprends. Comment ce sentiment influence-t-il votre musique 🎵 et votre processus créatif ? <br>
+				Eliakim : Quand je suis saturé, ça se ressent dans mes morceaux. Je veux exprimer cette fatigue 😓, ces moments où j’en ai assez, et comment je gère ces émotions. <br>
+				<br>
+				Psy : Très bien. Nous allons examiner comment ce sentiment de lassitude se traduit dans votre musique. Pour l’instant, pouvez-vous partager le texte de votre morceau "En avoir Marre" ? <br>
+				<br>
+				Je suis épuisé, chaque jour devient un combat ⚔️, <br>
+				Quand tout s'accumule, la pression me rattrape ⏳, <br>
+				Je chante ma fatigue, je laisse couler la colère 💢, <br>
+				Ce poids sur mes épaules, c’est trop lourd à faire. <br>
+				J’en ai marre de ces journées interminables 🥱, <br>
+				Des promesses non tenues, des rêves impossibles 🌌, <br>
+				Je mets tout ça dans mes rimes, je laisse parler ma peine 😢, <br>
+				Chaque morceau est une libération de cette gêne. <br>
+				<br>
+				J’en ai marre, je crie à travers mes chansons 🎤, <br>
+				La fatigue et la frustration sont mes compagnons 👥, <br>
+				Chaque parole est un exutoire pour ma détresse 😩, <br>
+				J’en ai marre, je laisse sortir ma faiblesse. <br>
+				<br>
+				Les défis s’accumulent, la routine m’écrase ⏳, <br>
+				Je transforme cette lassitude en paroles qui rasent ✍️, <br>
+				Chaque vers est un cri, chaque note un soupir 🎶, <br>
+				J’en ai marre, mais je continue à écrire. <br>
+				Je dépose mes frustrations, mes larmes dans le beat 🎧, <br>
+				Ma musique est le lieu où je peux tout dire 🗣️, <br>
+				Je laisse le stress et la colère se libérer 🔓, <br>
+				J’en ai marre, mais dans le rap, je me fais entendre. <br>
+				<br>
+				J’en ai marre, je crie à travers mes chansons 🎤, <br>
+				La fatigue et la frustration sont mes compagnons 👥, <br>
+				Chaque parole est un exutoire pour ma détresse 😩, <br>
+				J’en ai marre, je laisse sortir ma faiblesse. <br>
+				J’en ai marre, je crie à travers mes chansons 🎤, <br>
+				La fatigue et la frustration sont mes compagnons 👥, <br>
+				Chaque parole est un exutoire pour ma détresse 😩, <br>
+				J’en ai marre, je laisse sortir ma faiblesse. <br>
+				<br>
+				Psy : Merci, Eliakim, pour avoir partagé ce texte. On ressent vraiment la profondeur de votre frustration et de votre fatigue. <br>
+				Eliakim : Merci. C’est important pour moi de pouvoir exprimer ce que je ressens vraiment. <br>
+				<br>
+				Psy : Nous continuerons à explorer ces émotions et comment elles influencent votre créativité 🎨. La prochaine fois, nous chercherons des moyens de gérer et de canaliser ces sentiments de manière constructive. <br>
+				Eliakim : D’accord, j’ai hâte de voir comment on peut avancer là-dessus. À bientôt. <br>
+				<br>
+				Psy : À bientôt, Eliakim. Prenez soin de vous d’ici là. <br>
+				Eliakim : Si ça arrive. <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+				
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🧠 Première Séance avec Eliakim 🧠</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Psy : Bonjour, Eliakim. Bienvenue à votre première séance. Comment vous sentez-vous ? <br>
+				Eliakim : Pas super bien 😞. Beaucoup de pression. J'suis là pour indiscipline, le juge veut que je fasse quelques séances mais j'sais que c'est inutile, ceux qui ne me comprennent pas ne changeront pas et moi non plus. <br>
+				<br>
+				Psy : Je comprends. Pouvez-vous me dire d'où vient cette pression ? <br>
+				Eliakim : De ma carrière 🎤. Des attentes 📈. De moi-même. <br>
+				<br>
+				Psy : Cela doit être difficile à gérer. Comment cette pression affecte-t-elle votre vie quotidienne ? <br>
+				Eliakim : Je dors mal 😴. Je suis anxieux 😟. Parfois, je veux tout arrêter. <br>
+				<br>
+				Psy : C'est compréhensible. Avez-vous du soutien de votre entourage ? <br>
+				Eliakim : Pas vraiment. Ma famille ne comprend pas 🏡. Mes amis essaient, mais ils ont leurs propres soucis. <br>
+				<br>
+				Psy : La solitude peut être très pesante. Que faites-vous pour vous détendre ? <br>
+				Eliakim : J'écris de la musique 🎶. Mais même ça devient difficile. J'ai besoin de trouver un équilibre ⚖️. <br>
+				<br>
+				Psy : T'es pas causant toi 😅. <br>
+				Eliakim : Je sais. <br>
+		
+				<p>
+				J'suis dans une zone à danger ⚠️, <br>
+				J'ai besoin de penser 🤔. <br>
+				J'espère que tu me comprends 🙏. <br>
+				J'ai fait tout ce qu'il faut, <br>
+				Mais personne me comprend 😔. <br>
+				J'suis chez le psy 🛋️, <br>
+				Mais il veut pas me comprendre 😩. <br>
+				J'ai l'impression de perdre mon temps ⏳. <br>
+				<br>
+				Mais... <br>
+				J'suis dans une zone à danger ⚠️, <br>
+				J'ai besoin de penser 🤔. <br>
+				J'espère que tu me comprends 🙏. <br>
+				J'ai fait tout ce qu'il faut, <br>
+				Mais personne me comprend 😔. <br>
+				J'suis chez le psy 🛋️, <br>
+				Mais il veut pas me comprendre 😩. <br>
+				J'ai l'impression de perdre mon temps ⏳. <br>
+				Tu comprends ? <br>
+				<br>
+				Psy : Oui, je comprends. Pour notre prochaine séance, je voudrais explorer plus en détail comment la musique t'aide à gérer cette pression. Est-ce que la semaine prochaine à la même heure te convient ? <br>
+				Eliakim : Oui, ça me va. Merci 🙏. <br>
+				<br>
+				Psy : Parfait, Eliakim. Prenons rendez-vous pour la semaine prochaine. En attendant, essaie de te concentrer sur ce qui te fait du bien ☀️. <br>
+				Eliakim : Merci. <br></p>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+						<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">💣L’Écho de la Nuit💣</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				🎶 "Salut, Doc, ce rêve m’a vraiment secoué,<br>
+				💥 Dans ton bureau en plein jour, j’ai craqué,<br>
+				😠 La colère m’a envahi, j’ai vu rouge d’un coup,<br>
+				✊ Chaque coup que je donnais, j’prenais goût."<br><br>
+		
+				💭 "Doc, c’était fou, j’me voyais dans ce lieu connu,<br>
+				🌑 Mais l’obscurité dans ma tête n’a jamais disparu,<br>
+				👊 Chaque geste violent, une satisfaction morbide,<br>
+				🤕 Comme si la douleur libérait mes idées sordides."<br><br>
+		
+				💣 "Les coups tombaient, Doc, et j’me sentais si bien,<br>
+				🚪 Dans ce bureau familier, j’ai lâché le frein,<br>
+				😳 J’te voyais tomber, chaque coup un soulagement,<br>
+				🤔 Mais au réveil, la confusion, un étrange sentiment."<br><br>
+		
+				🌙 "Sous la lune, la nuit me parle,<br>
+				🌌 Des ténèbres, des rêves qui dévalent,<br>
+				🧠 Mon esprit s’égare, ma rage dévale,<br>
+				🔥 Le plaisir sombre, dans l’ombre, s’installe.<br><br>
+		
+				🌟 La lune éclaire mes pensées obscures,<br>
+				🕊️ Dans le silence, je cherche la cure,<br>
+				🌠 Les étoiles témoins de mes combats intérieurs,<br>
+				💖 Dans l’obscurité, je cherche le bonheur."  
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌅 Il partira demain 🌅</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Il partira demain, les valises prêtes, 🧳 <br>
+				Un dernier regard, une promesse muette. 🤫 <br>
+				Les souvenirs défilent, dans la nuit étoilée, 🌌 <br>
+				Chaque instant passé, une lueur à jamais. ✨ <br>
+				<br>
+				**Refrain :** <br>
+				Il partira demain, emportant une partie, 💔 <br>
+				De mon cœur en morceaux, d’une douce mélodie. 🎶 <br>
+				Les larmes se mêlent à la pluie qui tombe, 🌧️ <br>
+				Il partira demain, mais je garde l'ombre. 🌑 <br>
+				<br>
+				Les heures s'égrènent, le temps s'accélère, ⏳ <br>
+				Je sens le vide, dans l'air amer. ❌ <br>
+				Chaque mot non dit, chaque geste oublié, 🕊️ <br>
+				Il partira demain, mais je veux le garder. 🤲 <br>
+				<br>
+				**Refrain :** <br>
+				Il partira demain, emportant une partie, 💔 <br>
+				De mon cœur en morceaux, d’une douce mélodie. 🎶 <br>
+				Les larmes se mêlent à la pluie qui tombe, 🌧️ <br>
+				Il partira demain, mais je garde l'ombre. 🌑 <br>
+				<br>
+				Dans la nuit qui tombe, je cherche des réponses, 🕵️ <br>
+				Pourquoi faut-il partir, dans ce monde en silence ? 🤐 <br>
+				Les promesses s’effacent, comme une brise légère, 🍃 <br>
+				Il partira demain, mais je garde l’éphémère. 🌠 <br>
+				<br>
+				**Refrain :** <br>
+				Il partira demain, emportant une partie, 💔 <br>
+				De mon cœur en morceaux, d’une douce mélodie. 🎶 <br>
+				Les larmes se mêlent à la pluie qui tombe, 🌧️ <br>
+				Il partira demain, mais je garde l'ombre. 🌑 <br>
+				<br>
+				**Outro :** <br>
+				Il partira demain, mais son écho résonne, 🎤 <br>
+				Dans chaque coin de ma vie, une voix qui m’abandonne. 🕊️ <br>
+				Je le porterai toujours, au fond de moi, 💖 <br>
+				Il partira demain, mais jamais je ne l'oublierai. 🙏 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌅 Il est parti avant-hier 🌅</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Il est parti avant-hier, sans un mot, 🚶‍♂️ <br>
+				La maison résonne, un silence trop lourd. 🔕 <br>
+				Ses rires s'éteignent, échos dans l'air, 🎭 <br>
+				Chaque coin me rappelle, il n'est plus là, c'est amer. 💔 <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti avant-hier, emportant ma lumière, 🌞 <br>
+				Laissez-moi seul, face à mes chimères. 🌌 <br>
+				Chaque souvenir, une ombre qui s'étire, 🌊 <br>
+				Il est parti avant-hier, mais je continue à souffrir. 😢 <br>
+				<br>
+				Les jours s’allongent, le temps est figé, ⏳ <br>
+				Je cherche son sourire, dans un monde étranger. 🌍 <br>
+				Les ombres dansent, dansent autour de moi, 👤 <br>
+				Chaque instant passé, un reflet de son émoi. 🌈 <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti avant-hier, emportant ma lumière, 🌞 <br>
+				Laissez-moi seul, face à mes chimères. 🌌 <br>
+				Chaque souvenir, une ombre qui s'étire, 🌊 <br>
+				Il est parti avant-hier, mais je continue à souffrir. 😢 <br>
+				<br>
+				Dans le silence, j'appelle son nom, 📢 <br>
+				Mais l'écho me renvoie juste des frissons. ❓ <br>
+				Les larmes coulent, un océan sans fin, 🌧️ <br>
+				Il est parti avant-hier, mais je garde le chemin. 🛤️ <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti avant-hier, emportant ma lumière, 🌞 <br>
+				Laissez-moi seul, face à mes chimères. 🌌 <br>
+				Chaque souvenir, une ombre qui s'étire, 🌊 <br>
+				Il est parti avant-hier, mais je continue à souffrir. 😢 <br>
+				<br>
+				**Outro :** <br>
+				Il est parti avant-hier, mais son âme éclaire, 🌟 <br>
+				Chaque pas que je fais, dans la lumière amère. 🌅 <br>
+				Je le porterai toujours, au fond de moi, 💖 <br>
+				Il est parti avant-hier, mais jamais je ne l'oublierai. 🙏 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌊 Vagues de Souvenirs 🌊</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics" style="display: none;">
+				*Sur la plage déserte, le vent me rappelle 🌬️,* <br>
+				*Les rires d’un été, des promesses sans trêve 🌞.* <br>
+				*Les vagues me chuchotent des secrets oubliés 🌊,* <br>
+				*Chaque ressac, un écho de nos rêves envolés ✨.* <br>
+				<br>
+				*Je marche sur le sable, les souvenirs dansent 💃,* <br>
+				*Chaque pas que je fais, une nouvelle chance 🍀.* <br>
+				*Les étoiles se reflètent dans l’eau tranquille 🌌,* <br>
+				*Tandis que la nuit tombe, je me sens fragile 😔.* <br>
+				<br>
+				*Vagues de souvenirs, emportez-moi loin 🌊,* <br>
+				*Vers ces instants d’amour où je me sens vivant ❤️.* <br>
+				*Je chante pour la lune, pour les rêves passés 🌙,* <br>
+				*Dans le silence de la nuit, je cherche à rester 🌜.* <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🔥 Flamme Éteinte 🔥</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics" style="display: none;">
+				*Dans la nuit froide, une flamme s’est éteinte 🔥,* <br>
+				*Les cendres volent, emportant nos promesses 🌬️.* <br>
+				*Chaque regard échangé, un souvenir éphémère 👀,* <br>
+				*Un amour brûlant, maintenant dans l’enfer 🌪️.* <br>
+				<br>
+				*Les rires s’éteignent, comme une lumière faiblissante 💔,* <br>
+				*Les ombres dansent, sur les murs de mes pensées 🕯️.* <br>
+				*Je cherche la chaleur, mais le vide m’enchaîne ❄️,* <br>
+				*Chaque instant passé, une douleur qui me freine ⏳.* <br>
+				<br>
+				*Flamme éteinte, où es-tu partie ? 🌌,* <br>
+				*Dans le noir de ma chambre, je cherche un abri 🛌.* <br>
+				*Rallume la lumière, fais briller l’espoir ✨,* <br>
+				*Car sans toi, mon cœur est un désert, sans espoir 🌵.* <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌅 Il est parti hier 🌅</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Il est parti hier, sans un regard, 🚶‍♂️ <br>
+				L'aube se lève, mais je reste dans le noir. 🌑 <br>
+				Un vide immense, un cœur en morceaux, 💔 <br>
+				Ses rires résonnent, mais c'est devenu chaos. 🔊 <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti hier, emportant le soleil, 🌞 <br>
+				Laissez-moi seul, avec mes merveilles. 🌌 <br>
+				Chaque souvenir, une vague de douleur, 🌊 <br>
+				Il est parti hier, mais il reste dans mon cœur. ❤️ <br>
+				<br>
+				Les heures s'étirent, le temps est cruel, ⏳ <br>
+				Je cherche ses pas dans un monde irréel. 🌍 <br>
+				Les ombres dansent, me rappellent son visage, 👤 <br>
+				Chaque instant passé, un doux mirage. 🌈 <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti hier, emportant le soleil, 🌞 <br>
+				Laissez-moi seul, avec mes merveilles. 🌌 <br>
+				Chaque souvenir, une vague de douleur, 🌊 <br>
+				Il est parti hier, mais il reste dans mon cœur. ❤️ <br>
+				<br>
+				Dans le silence, je crie son nom, 📢 <br>
+				Mais l'écho me renvoie juste des questions. ❓ <br>
+				Les larmes coulent, un fleuve sans fin, 🌧️ <br>
+				Il est parti hier, mais je garde le chemin. 🛤️ <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti hier, emportant le soleil, 🌞 <br>
+				Laissez-moi seul, avec mes merveilles. 🌌 <br>
+				Chaque souvenir, une vague de douleur, 🌊 <br>
+				Il est parti hier, mais il reste dans mon cœur. ❤️ <br>
+				<br>
+				**Outro :** <br>
+				Il est parti hier, mais son âme éclaire, 🌟 <br>
+				Chaque pas que je fais, dans la lumière amère. 🌅 <br>
+				Je le porterai toujours, au fond de moi, 💖 <br>
+				Il est parti hier, mais jamais je ne l'oublierai. 🙏 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌑 Échos de l'Ombre 🌑</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics" style="display: none;">
+				*Dans le creux de la nuit, j'entends des murmures 🌙,* <br>
+				*Des échos du passé, des souvenirs qui durent ⏳.* <br>
+				*Chaque ombre me parle, chaque silence résonne 🔕,* <br>
+				*Je suis prisonnier d'un temps qui détonne ⚡.* <br>
+				<br>
+				*Les ombres dansent autour, comme un ballet de spectres 👻,* <br>
+				*Je cherche la lumière, mais je me sens si vexé 😞.* <br>
+				*Les secrets murmurés s'accrochent à ma peau 🌫️,* <br>
+				*Dans cette nuit sans fin, je me perds un peu plus haut 🚀.* <br>
+				<br>
+				*Les échos de l'ombre me hantent, me retiennent 🔮,* <br>
+				*Je suis le gardien d'une histoire ancienne 📜.* <br>
+				*Chaque note que je joue, chaque mot que je crie 🎶,* <br>
+				*Révèle les blessures, les rêves engloutis 💔.* <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌅 Il partira après demain 🌅</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Dans l'ombre des souvenirs, je t'attends, 🕯️ <br>
+				Chaque instant qui passe, c'est un peu plus déconcertant. ⏳ <br>
+				Les promesses murmurées au creux de la nuit, 🌙 <br>
+				Éclipsées par le jour, comme un rêve qui s’enfuit. ✨ <br>
+				<br>
+				**Refrain :** <br>
+				Il partira après demain, 🚶‍♂️ <br>
+				Emportant avec lui tout ce qu’on a bien. ❤️ <br>
+				Les rires, les pleurs, et les mots échangés, 😢 <br>
+				Il emportera une partie de moi, à jamais. 🌍 <br>
+				<br>
+				Les valises sont prêtes, les adieux en silence, 🧳 <br>
+				On sait que demain, c'est la fin de notre danse. 💃 <br>
+				Chaque regard croisé est un adieu déguisé, 👀 <br>
+				Les larmes qui coulent, impossible de les cacher. 😭 <br>
+				<br>
+				**Refrain :** <br>
+				Il partira après demain, 🚶‍♂️ <br>
+				Emportant avec lui tout ce qu’on a bien. ❤️ <br>
+				Les rires, les pleurs, et les mots échangés, 😢 <br>
+				Il emportera une partie de moi, à jamais. 🌍 <br>
+				<br>
+				Dans le reflet de ses yeux, je vois l’horizon, 🌅 <br>
+				Un futur incertain, un dernier frisson. ❄️ <br>
+				Mais je sais qu’il faut avancer, laisser le passé, 🏃‍♀️ <br>
+				Même si chaque au revoir fait mal à s’en défaire. 💔 <br>
+				<br>
+				**Refrain :** <br>
+				Il partira après demain, 🚶‍♂️ <br>
+				Emportant avec lui tout ce qu’on a bien. ❤️ <br>
+				Les rires, les pleurs, et les mots échangés, 😢 <br>
+				Il emportera une partie de moi, à jamais. 🌍 <br>
+				<br>
+				**Pont :** <br>
+				Et quand la nuit tombera, je penserai à nous, 🌌 <br>
+				À tous ces instants figés, à ce qu’on a perdu. ⏳ <br>
+				Mais je garderai en moi, l’écho de son rire, 🎶 <br>
+				Une lumière dans le noir, une étoile pour m’inspirer. 🌟 <br>
+				<br>
+				**Refrain :** <br>
+				Il partira après demain, 🚶‍♂️ <br>
+				Emportant avec lui tout ce qu’on a bien. ❤️ <br>
+				Les rires, les pleurs, et les mots échangés, 😢 <br>
+				Il emportera une partie de moi, à jamais. 🌍 <br>
+				<br>
+				**Outro :** <br>
+				Il partira après demain, 🚶‍♂️ <br>
+				Mais dans mon cœur, il restera un chemin. ❤️ <br>
+				Les souvenirs enflamment les pages de mon âme, 📖 <br>
+				Il partira après demain, mais je garderai sa flamme. 🔥 <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		<article class="item col-md-6">
+			<h2 class="song-title" style="font-weight: bold; color: black;">🌌 Il est parti 🌌</h2>
+			<div class="icon-container">
+				<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<button class="accordion" onclick="toggleLyrics(this)">Show Lyrics</button>
+			<div class="lyrics">
+				Il est parti sans un mot, 🚶‍♂️ <br>
+				Laisse derrière lui un écho. 📣 <br>
+				Dans le silence, je ressens son absence, 😔 <br>
+				Un vide immense, une triste danse. 💔 <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti, mais je le sens encore, 🌬️ <br>
+				Son rire résonne, même quand il s'endort. 😢 <br>
+				Chaque souvenir, une flamme dans la nuit, 🔥 <br>
+				Il est parti, mais il vit en moi, c'est ainsi. 🌟 <br>
+				<br>
+				Les jours passent, les larmes sèchent, 🌧️ <br>
+				Chaque coin de rue, une mémoire qui me blesse. 🏙️ <br>
+				Je cherche ses pas dans la foule, 👣 <br>
+				Mais tout ce que je trouve, c'est un monde qui s'enroule. 🌍 <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti, mais je le sens encore, 🌬️ <br>
+				Son rire résonne, même quand il s'endort. 😢 <br>
+				Chaque souvenir, une flamme dans la nuit, 🔥 <br>
+				Il est parti, mais il vit en moi, c'est ainsi. 🌟 <br>
+				<br>
+				Dans le reflet de la lune, je l'aperçois, 🌙 <br>
+				Une ombre douce, un souffle de joie. 💞 <br>
+				Je garde en moi ces instants volés, ⏳ <br>
+				Même si le temps ne peut les restituer. ⌛ <br>
+				<br>
+				**Refrain :** <br>
+				Il est parti, mais je le sens encore, 🌬️ <br>
+				Son rire résonne, même quand il s'endort. 😢 <br>
+				Chaque souvenir, une flamme dans la nuit, 🔥 <br>
+				Il est parti, mais il vit en moi, c'est ainsi. 🌟 <br>
+				<br>
+				**Outro :** <br>
+				Il est parti, mais son âme reste, 🌌 <br>
+				Dans chaque souffle, dans chaque geste. 🌈 <br>
+				Je le porte en moi, une douce mélodie, 🎶 <br>
+				Il est parti, mais jamais oublié. ❤️ <br>
+			</div>
+			<div class="show-more" onclick="showFullLyrics(this)">Show more...</div>
+		</article>
+		
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="text-center mt-5">
+    <section>
+        <p>Ceci est un <strong>PORTFOLIO MUSICAL</strong> <a href="http://html5up.net">Eliakim Clauvis</a>. 
+    </section>
+    <section>
+        <ul class="icons list-inline">
+            <li class="list-inline-item"><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li class="list-inline-item"><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li class="list-inline-item"><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li class="list-inline-item"><a href="#" class="icon brands fa-whatsapp"><span class="label">Dribbble</span></a></li>
+            <li class="list-inline-item"><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+    </section>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

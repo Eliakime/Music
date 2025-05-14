@@ -2,23 +2,27 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Play, Pause } from "lucide-react"
+import Link from "next/link"
+import { Play, Pause, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
+import AudioPlayer from "@/components/audio-player"
 import { motion } from "framer-motion"
 
 interface AlbumCardProps {
   title: string
-  year: string
-  tracks: number
+  category: string
   imageUrl: string
+  audioUrl: string
+  href: string
 }
 
-export default function AlbumCard({ title, year, tracks, imageUrl }: AlbumCardProps) {
+export default function AlbumCard({ title, category, imageUrl, audioUrl, href }: AlbumCardProps) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
 
-  const togglePlay = () => {
+  const handlePlay = () => {
     setIsPlaying(!isPlaying)
   }
 
@@ -31,7 +35,7 @@ export default function AlbumCard({ title, year, tracks, imageUrl }: AlbumCardPr
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Card className="bg-zinc-800/50 border-zinc-700/50 overflow-hidden backdrop-blur-sm">
+      <Card className="overflow-hidden border-zinc-800 bg-black/50 backdrop-blur-sm">
         <CardContent className="p-0">
           <div className="relative aspect-square">
             <Image
@@ -44,34 +48,34 @@ export default function AlbumCard({ title, year, tracks, imageUrl }: AlbumCardPr
               }}
             />
             <div
-              className={`absolute inset-0 bg-black/40 flex items-center justify-center transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
+              className="absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300"
+              style={{
+                opacity: isHovered ? 1 : 0,
+              }}
             >
               <Button
                 size="icon"
-                className="h-16 w-16 rounded-full bg-white text-black hover:bg-white/90 shadow-xl"
-                onClick={togglePlay}
+                className="w-14 h-14 rounded-full bg-amber-500 hover:bg-amber-600 text-black"
+                onClick={handlePlay}
               >
-                {isPlaying ? <Pause className="h-8 w-8" /> : <Play className="h-8 w-8 ml-1" />}
+                {isPlaying ? <Pause className="w-7 h-7" /> : <Play className="w-7 h-7 ml-0.5" />}
               </Button>
+            </div>
+            <div className="absolute top-3 left-3">
+              <Badge variant="outline" className="bg-black/70 backdrop-blur-sm">
+                {category}
+              </Badge>
             </div>
           </div>
           <div className="p-5">
-            <h3 className="text-xl font-bold">{title}</h3>
-            <p className="text-zinc-400">{year}</p>
+            <h3 className="mb-2 text-xl font-bold text-white">{title}</h3>
             <div className="flex items-center justify-between mt-4">
-              <div className="flex items-center gap-2">
-                <Button
-                  size="icon"
-                  variant="ghost"
-                  className="h-8 w-8 rounded-full hover:bg-white/10"
-                  onClick={togglePlay}
-                >
-                  {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-                </Button>
-                <span className="text-sm text-zinc-400">{tracks} titres</span>
-              </div>
-              <Button variant="ghost" size="sm" className="rounded-full hover:bg-white/10">
-                Voir
+              <AudioPlayer audioUrl={audioUrl} minimal onPlay={() => setIsPlaying(true)} />
+              <Button asChild variant="ghost" size="sm" className="rounded-full hover:bg-white/10">
+                <Link href={href}>
+                  <span className="sr-only">Voir</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </Button>
             </div>
           </div>

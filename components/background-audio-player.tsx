@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Play, Pause, Volume2, VolumeX } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Slider } from "@/components/ui/slider"
@@ -81,7 +81,7 @@ export default function BackgroundAudioPlayer() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.5 }}
         className={cn(
-          "bg-black/80 backdrop-blur-lg rounded-full transition-all duration-300 shadow-lg border border-white/10",
+          "bg-black/80 backdrop-blur-lg rounded-full transition-all duration-300 shadow-lg border border-zinc-800",
           expanded ? "p-4" : "p-3",
         )}
         onMouseEnter={() => setExpanded(true)}
@@ -90,9 +90,12 @@ export default function BackgroundAudioPlayer() {
         <div className="flex items-center gap-3">
           <Button
             size="icon"
-            variant="ghost"
+            variant={isPlaying ? "default" : "outline"}
             onClick={togglePlay}
-            className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 text-white"
+            className={cn(
+              "h-10 w-10 rounded-full",
+              isPlaying ? "bg-amber-500 hover:bg-amber-600 text-black" : "border-zinc-700 hover:bg-zinc-800",
+            )}
           >
             {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
           </Button>

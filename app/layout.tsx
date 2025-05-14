@@ -1,14 +1,17 @@
 import type React from "react"
-import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import "./globals.css"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Portfolio Musical",
-  description: "Portfolio musical professionnel avec lecteur audio intégré",
+  title: "Eliakime | Artiste & Développeur",
+  description:
+    "Portfolio musical d'Eliakime, artiste et développeur. Découvrez sa musique, ses projets et son univers.",
     generator: 'v0.dev'
 }
 
@@ -19,9 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-black text-white antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          {children}
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <div className="flex-grow">{children}</div>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

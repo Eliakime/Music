@@ -9,9 +9,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Eliakime | Artiste & Développeur",
+  title: "Eliakim Clauvis | Artiste & Développeur",
   description:
-    "Portfolio musical d'Eliakime, artiste et développeur. Découvrez sa musique, ses projets et son univers.",
+    "Portfolio musical d'Eliakim Clauvis, artiste et développeur. Découvrez sa musique, ses projets et son univers.",
     generator: 'v0.dev'
 }
 

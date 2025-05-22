@@ -160,7 +160,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="text-lg font-medium text-white">Email</h3>
-                        <p className="text-zinc-400">contact@eliakime.com</p>
+                        <p className="text-zinc-400">clauviseliakim@gmail.com</p>
                       </div>
                     </div>
                   </CardContent>

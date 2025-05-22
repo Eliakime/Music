@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-8 overflow-hidden rounded-full border-4 border-amber-500/30 shadow-[0_0_30px_rgba(251,191,36,0.3)]">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/Eliakim.png?height=200&width=200"
                   alt="Eliakime"
                   width={200}
                   height={200}
@@ -37,7 +37,7 @@ export default function Home() {
               </div>
               <h1 className="mb-4 text-5xl font-bold tracking-tight text-white md:text-7xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
-                  ELIAKIME
+                  ELIAKIM CLAUVIS
                 </span>
               </h1>
               <p className="max-w-2xl mb-8 text-xl text-zinc-300">Artiste • Producteur • Développeur</p>
@@ -79,9 +79,9 @@ export default function Home() {
             </div>
 
             <FeaturedTrack
-              title="Harmonic Synthesis"
+              title="L'A.D.O"
               description="Une fusion entre rythmes électroniques et mélodies organiques, créée au carrefour de la programmation et de l'intuition musicale."
-              imageUrl="/placeholder.svg?height=600&width=600"
+              imageUrl="/Ado.png?height=600&width=600"
               audioUrl="/placeholder-music.mp3"
             />
           </div>
@@ -148,14 +148,14 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <UpcomingProjectCard
                 title="Live Session - Studio 54"
-                date="15 Juin 2023"
+                date="15 Juin 2025"
                 description="Une session live exclusive où je présenterai mes nouveaux morceaux dans une ambiance intimiste."
                 imageUrl="/placeholder.svg?height=400&width=600"
                 tags={["Live", "Nouveau Matériel", "Exclusif"]}
               />
               <UpcomingProjectCard
                 title="EP Collaboration - Digital Fusion"
-                date="Août 2023"
+                date="Août 2025"
                 description="Un EP collaboratif avec des artistes internationaux, fusionnant différents styles et influences."
                 imageUrl="/placeholder.svg?height=400&width=600"
                 tags={["EP", "Collaboration", "Fusion"]}
@@ -172,7 +172,7 @@ export default function Home() {
                 "Je crée des mondes sonores comme je développe des applications : avec passion, précision et une vision
                 claire de ce que je veux transmettre."
               </p>
-              <p className="text-amber-500 font-semibold">— Eliakime</p>
+              <p className="text-amber-500 font-semibold">— Eliakim Clauvis</p>
             </div>
           </div>
         </section>
